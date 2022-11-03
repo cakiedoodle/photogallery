@@ -3,29 +3,30 @@
 <head>
     <title>TK Photography</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>TK Photography</h1>
+        <h1 id="top">TK Photography</h1>
         <nav>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">^ top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#top">^ top</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>    
-            <h2>About</h2>
+            <h2 id="#about">About</h2>
             <img src="TK.png" alt=" ">
             <p>Hello!</p>
             <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my specialty and it's taken me all over the world.</p>
         </section>
 
         <section>
-            <h2>Gallery</h2>
+            <h2 id="#gallery">Gallery</h2>
             <p>Here are some highlights of my work. The locations and year are in the caption.</p>
             <img src="Chile.png" alt="Chile, 2001">
             <img src="Guatemala.png" alt="Guatemala, 1997">
@@ -43,13 +44,13 @@
     </main>
 
     <section>
-        <h2>Contact</h2>
+        <h2 id="contact">Contact</h2>
         <p>Please fill out this form and I'll connect with you soon.</p>
-        <h3>Contact Information</h3>
+        <p>Contact Information</p>
         <form>
-            <label for="form_name"><input type="text" placeholder="Your full name" id="form_name" name="name">Name</label>
-            <label for="form_email"><input type="text" placeholder="Enter your email address" id="form_email" name="email">Email</label>
-            <label for="form_mes"><input type="text" placeholder="What can I help you with?" id="form_mes" name="message">Message</label>
+            <label for="form_name">Name<input type="text" placeholder="Your full name" id="form_name" name="name"></label>
+            <label for="form_email">Email<input type="text" placeholder="Enter your email address" id="form_email" name="email"></label>
+            <label for="form_mes">Message<input type="text" placeholder="What can I help you with?" id="form_mes" name="message"></label>
             <input type="submit" value="Submit">
         </form>
     </section>
