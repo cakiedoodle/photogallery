@@ -1,3 +1,5 @@
+/* General and Text */
+
 html {
     background-color: #000000;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,14 +10,65 @@ body {
     background-color: #FFFFFF;
 }
 
-h1 h2 {
+h1 {
+    font-size: 40px;
+    color: #007D7B;
+    text-transform: uppercase;
+    float: left;
+}
+
+h2 {
     font-size: 40px;
     color: #000000;
 }
 
-[href="TK"] {
-    width: 850px;
-    float: left;
+p {
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Header and Nav */
+
+header, footer {
+    background-color: #000000;
+}
+
+nav li {
+    list-style: none;
+}
+
+li a {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform:uppercase;
+    text-decoration: none;
+    display: inline-flex;
+    
+}
+
+nav a:hover {
+    color: #007D7B;
+}
+
+[href="#top"] {
+    background-color: #007D7B;
+    position: fixed;
+    height: 20px;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+}
+
+[href="#top"]:hover {
+    background-color: #FFFFFF;
+    color:#007D7B;
+}
+
+/* Main and Contact */
+
+main {
+    clear: both;
 }
 
 .about {
@@ -24,5 +77,59 @@ h1 h2 {
 }
 
 .gallery {
-    float: none;
+    clear: both;
 }
+
+.contact {
+    width: 850px;
+    background-color: #000000;
+    text-align: center;
+    padding-left: 210px;
+}
+
+.contact h2, .contact p {
+    color: #FFFFFF;
+}
+
+form {
+    font-size: 16px;
+}
+
+h2 .contact, label {
+    color: #FFFFFF;
+}
+
+input {
+    color: #007D7B;
+}
+
+input[type=submit] {
+    background-color: #007D7B;
+    color: #FFFFFF;
+}
+
+/* Images */
+
+#author {
+    width: 850px;
+    float: left;
+}
+
+img[src] {
+    width: 420px;
+    height: 281px;
+}
+
+img[alt^="I"] {
+    height: 630px;
+}
+
+[alt] {
+    font-size: 16px;
+}
+
+/* What to do:
+- figure out nav placement
+- padding and position of main content
+- make contact background go across screen
+- design form
