@@ -14,12 +14,19 @@ h1 {
     font-size: 40px;
     color: #007D7B;
     text-transform: uppercase;
-    float: left;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 30px;
 }
 
 h2 {
     font-size: 40px;
     color: #000000;
+    display: inline;
+}
+
+h3 {
+    visibility: hidden;
 }
 
 p {
@@ -27,14 +34,24 @@ p {
     color: #000000;
 }
 
+.content-wrap {
+    width: 1310px;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
 /* Header and Nav */
 
 header, footer {
     background-color: #000000;
+    color: #FFFFFF;
 }
 
-nav li {
-    list-style: none;
+ul li {
+    display: inline;
+    position: relative;
+    left: 645px;
+    top: -45px; 
 }
 
 li a {
@@ -42,8 +59,7 @@ li a {
     font-size: 20px;
     text-transform:uppercase;
     text-decoration: none;
-    display: inline-flex;
-    
+    padding-left: 80px;
 }
 
 nav a:hover {
@@ -68,23 +84,32 @@ nav a:hover {
 /* Main and Contact */
 
 main {
-    clear: both;
+    /*clear: both;*/
 }
 
 .about {
     width: 420px;
     float: right;
+    text-align: right;
+    padding-right: 20px;
+    
+}
+
+.about p {
+    text-indent: 30px;
+    height: 20px;
 }
 
 .gallery {
     clear: both;
+    text-indent: 20px;
 }
 
 .contact {
     width: 850px;
     background-color: #000000;
     text-align: center;
-    padding-left: 210px;
+    margin: 0 auto;
 }
 
 .contact h2, .contact p {
@@ -113,24 +138,36 @@ input[type=submit] {
 #author {
     width: 850px;
     float: left;
+    margin-left: 10px;
 }
 
-img[src] {
+figure {
     width: 420px;
     height: 281px;
+    display: block;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: inline-flex;
+}
+
+figcaption {
+    position: absolute;
+    text-transform: uppercase;
 }
 
 img[alt^="I"] {
     height: 630px;
 }
 
-[alt] {
-    font-size: 16px;
+.brighten {
+    color: #FFFFFF;   
 }
 
+
+
 /* What to do:
-- figure out nav placement
-- padding and position of main content
 - make contact background go across screen
 - design form
 - image captions
