@@ -28,7 +28,7 @@
         <section class="gallery">
             <h2 id="#gallery">Gallery</h2>
             <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-
+            <div class="images">
             <figure>
                 <figcaption>Chile, 2001</figcaption>
                 <img src="images/Chile.png" alt="sunset in Chile">
@@ -38,7 +38,7 @@
                 <img src="images/Guatemala.png" alt="Guatemala, 1997">
             </figure>
             <figure>
-                <figcaption class="brighten">Hawaii, 2010</figcaption>
+                <figcaption class="brighten" id="lower">Hawaii, 2010</figcaption>
                 <img src="images/Hawaii.png" alt="Hawaii, 2010">
             </figure>
             <figure>
@@ -46,7 +46,7 @@
                 <img src="images/Iran.png" alt="Iran, 1999">
             </figure>
             <figure>
-                <figcaption class="brighten">Ireland, 2012</figcaption>
+                <figcaption class="brighten" >Ireland, 2012</figcaption>
                 <img src="images/Ireland.png" alt="Ireland, 2012">
             </figure>
             <figure>
@@ -54,7 +54,7 @@
                 <img src="images/Italy.png" alt="Italy, 2015">
             </figure>
             <figure>
-                <figcaption class="brighten">Moab Desert, 2020</figcaption>
+                <figcaption class="brighten" id="lower">Moab Desert, 2020</figcaption>
                 <img src="images/Moab-Desert.png" alt="Moab Desert, 2020">
             </figure>
             <figure>
@@ -66,7 +66,7 @@
                 <img src="images/Switzerland.png" alt="Switzerland, 2014">
             </figure>
             <figure>
-                <figcaption class="brighten">UK, 2005</figcaption>
+                <figcaption class="brighten" id="lower">UK, 2005</figcaption>
                 <img src="images/UK.png" alt="UK, 2005">
             </figure>
             <figure>
@@ -77,22 +77,20 @@
                 <figcaption class="brighten">Wyoming, 2021</figcaption>
                 <img src="images/Wyoming.png" alt="Wyoming, 2021">
             </figure>
+            </div>
         </section>
     </main>
 
-    <section class="content-wrap">
-        <div class="contact">
-            <h2 id="contact">Contact</h2>
-            <p>Please fill out this form and I'll connect with you soon.</p>
-            <h3>Contact Information</h3>
-            <form>
-                <label for="form_name">Name<input type="text" placeholder="Your full name" id="form_name" name="name"></label>
-                <label for="form_email">Email<input type="text" placeholder="Enter your email address" id="form_email" name="email"></label>
-                <label for="form_mes">Message<input type="text" placeholder="What can I help you with?" id="form_mes" name="message"></label>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </section>
+    <form class="contact">
+        <h2 id="contact">Contact</h2>
+        <p>Please fill out this form and I'll connect with you soon.</p>
+        <h3>Contact Information</h3>
+
+        <label for="name">Name<input type="text" placeholder="Your full name" id="name" name="name"></label>
+        <label for="email">Email<input type="text" placeholder="Enter your email address" id="email" name="email"></label>
+        <label for="message">Message<input type="text" placeholder="What can I help you with?" id="message" name="message"></label>
+        <button type="submit" value="Submit">Submit</button>
+    </form>
 
     <footer>
         <small>Copyright 2021 TK Photography</small>

@@ -14,27 +14,29 @@ h1 {
     font-size: 40px;
     color: #007D7B;
     text-transform: uppercase;
-    display: inline-block;
     margin-bottom: 0;
     margin-left: 30px;
 }
 
 h2 {
+    text-transform: uppercase;
     font-size: 40px;
     color: #000000;
-    display: inline;
+    margin: 0;
 }
 
 h3 {
     visibility: hidden;
+    display: inline;
 }
 
 p {
     font-size: 20px;
     color: #000000;
+    margin: 0;
 }
 
-.content-wrap {
+form {
     width: 1310px;
     margin: 0 auto;
     background-color: #000000;
@@ -42,9 +44,10 @@ p {
 
 /* Header and Nav */
 
-header, footer {
+header {
     background-color: #000000;
     color: #FFFFFF;
+    
 }
 
 ul li {
@@ -81,55 +84,75 @@ nav a:hover {
     color:#007D7B;
 }
 
-/* Main and Contact */
-
-main {
-    /*clear: both;*/
-}
+/* Main, Contact, and Footer */
 
 .about {
     width: 420px;
     float: right;
     text-align: right;
     padding-right: 20px;
-    
 }
 
-.about p {
+.about p + p {
     text-indent: 30px;
     height: 20px;
 }
 
 .gallery {
     clear: both;
-    text-indent: 20px;
+    margin: 0 auto;
+}
+
+.gallery h2, .gallery p {
+    margin-bottom: 5px;
+    margin-left: 15px;
 }
 
 .contact {
-    width: 850px;
-    background-color: #000000;
     text-align: center;
-    margin: 0 auto;
 }
 
 .contact h2, .contact p {
     color: #FFFFFF;
 }
 
-form {
-    font-size: 16px;
-}
-
 h2 .contact, label {
     color: #FFFFFF;
+} 
+
+label,  [name], button {
+    display: block;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: left;
+    width: 850px;
+    margin: 0 auto;
+    
 }
 
-input {
-    color: #007D7B;
+input, ::placeholder {
+    color:#007D7B;
+    font-size: inherit;
+    text-transform: uppercase;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
 }
 
-input[type=submit] {
+button {
     background-color: #007D7B;
+    color: #FFFFFF;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid #007D7B;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;;
+    text-align: center;
+    background-color: #000000;
     color: #FFFFFF;
 }
 
@@ -141,34 +164,34 @@ input[type=submit] {
     margin-left: 10px;
 }
 
+
+
 figure {
     width: 420px;
     height: 281px;
-    display: block;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
     margin-left: 10px;
-    margin-right: 0px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    display: inline-flex;
-}
-
-figcaption {
-    position: absolute;
-    text-transform: uppercase;
+    margin-right: 0;
 }
 
 img[alt^="I"] {
     height: 630px;
 }
 
+figcaption {
+    position: relative;
+    text-transform: uppercase;
+    display: inline;
+    top: 20px;
+    padding: 5px;
+}
+
+#lower {
+    top: 280px;
+}
+
 .brighten {
     color: #FFFFFF;   
 }
-
-
-
-/* What to do:
-- make contact background go across screen
-- design form
-- image captions
-*/
